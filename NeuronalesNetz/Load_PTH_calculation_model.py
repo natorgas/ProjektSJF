@@ -2,13 +2,10 @@ import tensorflow as tf
 import numpy as np
 import os
 
-# Get the directory of the script
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-# Full path to the directory containing the SavedModel
 saved_model_dir = os.path.join(dir_path, "PTH_calculation_model_stable_is_40.keras")
 
-# Load the model
 model = tf.keras.models.load_model(saved_model_dir)
 
 alpha = float(input("Alpha: "))
