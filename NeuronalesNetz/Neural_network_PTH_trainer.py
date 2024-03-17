@@ -16,6 +16,8 @@ def swish(x):
 
 data = pd.concat([alpha_data, beta_data, times_data], axis=1)
 
+print(alpha_data)
+
 predict = "Times"
 
 X = data.drop(columns=["Times"])
@@ -27,7 +29,8 @@ x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.2)
 model = tf.keras.models.Sequential()
 
 # Anzahl Schichten und Neuronen festlegen
-model.add(tf.keras.layers.Dense(units=10, input_shape=(2,), activation=swish))
+model.add(tf.keras.layers.InputLayer(input_shape=(2,)))
+model.add(tf.keras.layers.Dense(units=10, activation=swish))
 model.add(tf.keras.layers.Dense(units=200, activation=swish))
 model.add(tf.keras.layers.Dense(units=100, activation=swish))
 model.add(tf.keras.layers.Dense(units=200, activation=swish))
