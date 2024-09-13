@@ -8,7 +8,7 @@
 ### Install required packages
 1. Open a terminal and make sure you have Python installed by typing ``py --version``. <br> If that is not the case, you can download Python [here](https://www.python.org/downloads/).
 2. Make sure you have pip installed by typing ``pip --version`` in your terminal.<br> If that is not the case, you can find its documentation [here](https://pip.pypa.io/en/stable/).
-3. In your terminal, install the necessary packages by typing ``pip install numpy tensorflow``.
+3. In your terminal, install the necessary packages by typing ``pip install numpy pandas tensorflow``.
 
 ### Load the neural network
 1. Still using your terminal, navigate to the foldere where the Project was saved.
