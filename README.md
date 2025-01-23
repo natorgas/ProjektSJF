@@ -11,6 +11,6 @@
 3. In your terminal, install the necessary packages by typing ``pip install numpy pandas tensorflow``.
 
 ### Load the neural network
-1. Still using your terminal, navigate to the foldere where the Project was saved.
+1. Still using your terminal, navigate to the folder where the Project was saved.
 2. From there navigate into the folder ``\NeuronalesNetz``.
 3. Now type ``py Load_PTH_calculation_model.py``
